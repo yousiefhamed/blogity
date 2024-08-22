@@ -57,3 +57,70 @@
     transform: rotate(360deg);
   }
 }
+
+.tiptap,
+.post {
+  color: black;
+
+  strong {
+    font-weight: bold;
+  }
+  italic {
+    font-style: italic;
+  }
+  p {
+    padding-block: 0.5rem;
+  }
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  h4 {
+    font-size: 1.25rem;
+    margin-bottom: 0.25rem;
+  }
+  h5 {
+    font-size: 1rem;
+    margin-bottom: 0.1rem;
+  }
+  h6 {
+    font-size: 0.875rem;
+    margin-bottom: 0.05rem;
+  }
+  ul {
+    list-style-type: disc;
+    margin-left: 1.5rem;
+    padding-left: 1rem;
+    li p {
+      padding-block: 0.2rem;
+    }
+  }
+  ol {
+    list-style-type: decimal;
+    margin-left: 1.5rem;
+    padding-left: 1rem;
+    li p {
+      padding-block: 0.2rem;
+    }
+  }
+  blockquote {
+    border-left: 0.5rem solid rgb(107, 33, 168);
+    padding-left: 1rem;
+    margin-left: 1rem;
+    margin-block: 1rem;
+    width: fit-content;
+    line-height: 1.2rem;
+
+    cite {
+      font-style: italic;
+      font-size: 0.875rem;
+    }
+    p {
+      padding-block: 0.5rem;
+    }
+  }
+}
