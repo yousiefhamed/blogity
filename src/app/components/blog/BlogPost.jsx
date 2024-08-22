@@ -1,6 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
-import Loading from "../Loading";
+import Loading from "../../loading";
 import ErrorMessage from "../ErrorMessage";
 import Image from "next/image";
 
