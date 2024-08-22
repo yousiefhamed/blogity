@@ -1,3 +1,59 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  z-index: -20;
+  min-height: calc(100svh - 64px - 56px);
+}
+
+.spinner {
+  width: 60px;
+  height: 60px;
+  position: relative;
+  animation: rotate 2s linear infinite;
+}
+
+.spinner-blade {
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform-origin: 100% 100%;
+  animation: spin 2s linear infinite;
+}
+
+.spinner-blade:nth-child(2) {
+  transform: rotate(90deg);
+}
+
+.spinner-blade:nth-child(3) {
+  transform: rotate(180deg);
+}
+
+.spinner-blade:nth-child(4) {
+  transform: rotate(270deg);
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
