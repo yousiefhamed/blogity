@@ -62,7 +62,7 @@ const BlogList = () => {
             {blogs.length > 0 &&
               filteredBlogs.length > 0 &&
               filteredBlogs.map((blog) => (
-                <BlogCard key={blog.id} blog={blog} />
+                <BlogCard key={blog._id} blog={blog} />
               ))}
             {error ? (
               <ErrorMessage

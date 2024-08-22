@@ -10,7 +10,7 @@ export default function BlogPost({ params }) {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch(`http://localhost:8003/blogs/${params.id}`)
+    fetch(`${process.env.NEXT_PUBLIC_BACKEND_API}/blogs/${params.id}`)
       .then((response) => response.json())
       .then((data) => {
         setPost(data);

@@ -40,7 +40,6 @@ const AddNewPost = ({ previewPost, handleChange, handleContentChange }) => {
     }
 
     let newPost = {
-      createdAt: new Date().getTime(),
       ...previewPost,
     };
 
