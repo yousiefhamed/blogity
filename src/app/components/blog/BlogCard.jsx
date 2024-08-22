@@ -4,7 +4,7 @@ import Link from "next/link";
 const BlogCard = ({ blog }) => {
   return (
     <Link
-      href={`/blog/${blog.id}`}
+      href={`/blog/${blog._id}`}
       className="w-full flex justify-start items-center gap-5 bg-white shadow-lg rounded-lg overflow-hidden hover:-rotate-3 hover:shadow-xl transition-all cursor-pointer sm:flex-row flex-col"
     >
       <div className="sm:min-w-[350px] lg:min-w-[500px] min-w-full w-[350px] md:w-[500px] h-60">
