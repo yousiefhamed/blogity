@@ -10,7 +10,7 @@ export default function BlogPost({ params }) {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch(`${process.env.NEXT_PUBLIC_BACKEND_API}/blogs/${params.id}`)
+    fetch(`${process.env.NEXT_PUBLIC_BACKEND_API}/blogs/${params._id}`)
       .then((response) => response.json())
       .then((data) => {
         setPost(data);
@@ -20,7 +20,7 @@ export default function BlogPost({ params }) {
         setError(error);
         setIsLoading(false);
       });
-  }, [params.id]);
+  }, [params._id]);
 
   return (
     <div>
