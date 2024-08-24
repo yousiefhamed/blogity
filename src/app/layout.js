@@ -14,7 +14,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-zinc-100`}>
+      <body className={`${inter.className} bg-zinc-100 overflow-x-hidden`}>
         <GradientDecor />
         <Navbar />
         <main className="w-full max-w-screen-lg mx-auto">{children}</main>
